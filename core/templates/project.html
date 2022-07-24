@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+{% block content %}
+<script src="/static/LetsMapYourNetwork/js/lmyn.js"></script>
+
+<div id="container">
+    <style>
+        #graph-container {
+            top: 60;
+            bottom: 0;
+            left: 300;
+            right: 0;
+            position: absolute;
+        }
+    </style>
+    <div id="graph-container"></div>
+</div>
+{% endblock %}
