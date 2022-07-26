@@ -16,22 +16,22 @@
 #### For Linux User (Note - Below commands have been provided for Debian-based linux. For other versions of Linux change all commands accordingly) #### 
 
 1. Download LMYN from GitHub and extract all to a directory like /opt/LMYN ($LMYN_HOME)
-2. Install python: sudo apt-get install python2.7
-3. Install nmap: sudo apt-get install nmap 
-4. Install rabbitmq-server: sudo apt-get install rabbitmq-server
+2. Install python: `sudo apt-get install python2.7`
+3. Install nmap: `sudo apt-get install nmap `
+4. Install rabbitmq-server: `sudo apt-get install rabbitmq-server`
 5. Install Java Development Kit
    - Install Oracle JDK 8 (it’s a prerequisite for Neo4j database)
    - Run command java -version on terminal
    - If output with version details then jump to Neo4j installation or else continue with Java installation 
    - Run below commands to install Java
-     - sudo add-apt-repository ppa:webupd8team/java -y
-     - sudo apt-get update 
-     - sudo apt-get install oracle-java8-installer
+     - `sudo add-apt-repository ppa:webupd8team/java -y`
+     - `sudo apt-get update `
+     - `sudo apt-get install oracle-java8-installer`
 6. Go to Neo4j [download](https://neo4j.com/download-center/#releases) section
    - Select ‘Community Server’ section and [download Linux version of Neo4j](https://go.neo4j.com/download-thanks.html?edition=community&release=3.3.6&flavour=unix&_ga=2.217214878.946316120.1534600164-1297405808.1534400604)
-   - Extract the downloaded file with command sudo tar -xzf neo4j-community-3.3.6-unix.tar.gz -C /opt/neo4j
-   - Change to neo4j directory cd /opt/neo4j
-   - Run command ./bin/neo4j console to start the neo4j server
+   - Extract the downloaded file with command `sudo tar -xzf neo4j-community-3.3.6-unix.tar.gz -C /opt/neo4j`
+   - Change to neo4j directory `cd /opt/neo4j`
+   - Run command `./bin/neo4j console` to start the neo4j server
    - Browse to Neo4j web console (http://localhost:7474) to change the default password from neo4j to Neo4j
    - Please refer [Neo4j Installation Guide](https://neo4j.com/docs/operations-manual/current/installation) for any troubleshooting, if required 
 7. Run command sudo pip install --trusted-host pypi.python.org -r $LMYN/LetsMapYourNetwork/requirements.txt
